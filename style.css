@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edf1f4;
+    font-family: 'Poppins', 'sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0,0,0, .1), -15px -15px 20px #fffb;
+}
+
+.calculator .buttons {
+    position: relative;
+    display: grid;
+}
+
+.calculator .buttons #value {
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0, .1), inset -5px -5px 20px #fff;
+    margin-bottom: 12px;
+    padding: 0 20px;
+}
+
+.calculator .buttons span {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2em;
+    color: #666;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .1), -5px -5px 20px #fff;
+}
+
+.calculator .buttons #clear {
+    font-weight: 500;
+    color: #000;
+}
+
+.calculator .buttons #equal {
+    font-size: 1.5em;
+    font-weight: 600;
+    grid-row: span 2;
+}
+
+.calculator .buttons #plus {
+    font-size: 1.5em;
+    font-weight: 600;
+}
